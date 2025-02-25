@@ -9,3 +9,24 @@
 body {
   min-height: 100vh;
 }
+
+.picture-frame{
+    width: 20vw;
+    height: 20vw;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.picture-holder{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100vw;
+    
+    position: relative;
+    /* Change right position between 0/20vw/40vw/60vw/80vw to display each picture -- create classes for each for use in js*/
+    right: 80vw;
+}
+
+.picture-holder > *{
+    padding: 5%;
+}
