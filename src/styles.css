@@ -30,23 +30,41 @@ body {
 }
 
 .picture-frame{
-    width: 20vw;
-    height: 20vw;
-    border: 3px solid black;
-    border-radius: 5%;
-    overflow: hidden;
+  width: 20vw;
+  height: 20vw;
+  border: 3px solid black;
+  border-radius: 5%;
+  overflow: hidden;
 }
 
 .picture-holder{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 100vw;
-    
-    position: relative;
-    /* Change right position between 0/20vw/40vw/60vw/80vw to display each picture -- create classes for each for use in js*/
-    right: 80vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100vw;
+  
+  position: relative;
+}
+
+.picture-holder-1{
+  right: 0;
+}
+
+.picture-holder-2{
+  right: 20vw;
+}
+
+.picture-holder-3{
+  right: 40vw;
+}
+
+.picture-holder-4{
+  right: 60vw;
+}
+
+.picture-holder-5{
+  right: 80vw;
 }
 
 .picture-holder > *{
-    padding: 5%;
+  padding: 5%;
 }
