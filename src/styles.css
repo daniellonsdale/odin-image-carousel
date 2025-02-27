@@ -45,6 +45,25 @@ body {
   position: relative;
 }
 
+.dot-container{
+  position: absolute;
+  display: flex;
+  gap: 4px;
+  top: 63%;
+  left: .25%;
+}
+
+.dot{
+  height: 1.5vw;
+  width: 1.5vw;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.dot-selected{
+  background-color: rgb(206, 206, 206);
+}
+
 .picture-holder-1{
   right: 0;
 }
