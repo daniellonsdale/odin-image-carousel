@@ -11,12 +11,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(206, 206, 206);
+}
+
+.carousel-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: rgba(118, 122, 128, 0.2) 0px 8px 24px;
+  padding: 8px 0px;
+  border-radius: 5%;
+}
+
+.arrow{
+  padding: 12px;
+  margin: 0 12px;
 }
 
 .picture-frame{
     width: 20vw;
     height: 20vw;
-    border: 1px solid red;
+    border: 3px solid black;
+    border-radius: 5%;
     overflow: hidden;
 }
 
