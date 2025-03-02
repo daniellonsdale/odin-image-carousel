@@ -43,3 +43,10 @@ leftArrow.addEventListener('click', () =>{
         changePicture(newPicture);
     }
 });
+
+rightArrow.addEventListener('click', () =>{
+    if(curPicture != 5){
+        let newPicture = curPicture++;
+        changePicture(newPicture);
+    }
+});
