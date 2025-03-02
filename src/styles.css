@@ -50,12 +50,34 @@ body {
 }
 
 .dot-container{
-  position: absolute;
+  position: relative;
   display: flex;
+  max-width: fit-content;
   gap: 4px;
-  top: 63%;
-  left: .25%;
+  top: 90%;
+  left: 26%;
+  z-index: 10;
 }
+
+/* .dot-container-1{
+  right: 0;
+}
+
+.dot-container-2{
+  right: 20vw;
+}
+
+.dot-container-3{
+  right: 40vw;
+}
+
+.dot-container-4{
+  right: 60vw;
+}
+
+.dot-container-5{
+  right: 80vw;
+} */
 
 .dot{
   height: 1.5vw;

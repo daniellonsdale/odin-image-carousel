@@ -12,28 +12,8 @@ let curPicture = 1;
 
 function changePicture(pictureNumber){
     pictureHolder.classList.remove(`picture-holder-${curPicture}`);
-    switch(pictureNumber){
-        case 1:
-            pictureHolder.classList.add('picture-holder-1');
-            curPicture = 1;
-            break;
-        case 2:
-            pictureHolder.classList.add('picture-holder-2');
-            curPicture = 2;
-            break;
-        case 3:
-            pictureHolder.classList.add('picture-holder-3');
-            curPicture = 3
-            break;
-        case 4:
-            pictureHolder.classList.add('picture-holder-4');
-            curPicture = 4;
-            break;
-        case 5:
-            pictureHolder.classList.add('picture-holder-5');
-            curPicture = 5;
-            break;
-    }
+    pictureHolder.classList.add(`picture-holder-${pictureNumber}`);
+    curPicture = pictureNumber;
 }
 
 leftArrow.addEventListener('click', () =>{
