@@ -65,3 +65,23 @@ rightArrow.addEventListener('click', () =>{
         changePicture(newPicture);
     }
 });
+
+dotOne.addEventListener('click', () =>{
+    changePicture(1);
+});
+
+dotTwo.addEventListener('click', () =>{
+    changePicture(2);
+});
+
+dotThree.addEventListener('click', () =>{
+    changePicture(3);
+});
+
+dotFour.addEventListener('click', () =>{
+    changePicture(4);
+});
+
+dotFive.addEventListener('click', () =>{
+    changePicture(5);
+});
