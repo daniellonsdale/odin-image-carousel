@@ -11,8 +11,7 @@ const pictureHolder = document.querySelector('.picture-holder');
 let curPicture = 1;
 
 function changePicture(pictureNumber){
-    pictureHolder.removeAttribute('class');
-    pictureHolder.classList.add('picture-holder');
+    pictureHolder.classList.remove(`picture-holder-${curPicture}`);
     switch(pictureNumber){
         case 1:
             pictureHolder.classList.add('picture-holder-1');
@@ -39,14 +38,14 @@ function changePicture(pictureNumber){
 
 leftArrow.addEventListener('click', () =>{
     if(curPicture != 1){
-        let newPicture = curPicture--;
+        let newPicture = curPicture - 1;
         changePicture(newPicture);
     }
 });
 
 rightArrow.addEventListener('click', () =>{
     if(curPicture != 5){
-        let newPicture = curPicture++;
+        let newPicture = curPicture + 1;
         changePicture(newPicture);
     }
 });
