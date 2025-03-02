@@ -13,6 +13,42 @@ let curPicture = 1;
 function changePicture(pictureNumber){
     pictureHolder.classList.remove(`picture-holder-${curPicture}`);
     pictureHolder.classList.add(`picture-holder-${pictureNumber}`);
+    if(curPicture != pictureNumber){
+        switch(curPicture){
+            case 1:
+                dotOne.classList.remove('dot-selected');
+                break;
+            case 2:
+                dotTwo.classList.remove('dot-selected');
+                break;
+            case 3:
+                dotThree.classList.remove('dot-selected');
+                break;
+            case 4:
+                dotFour.classList.remove('dot-selected');
+                break;
+            case 5:
+                dotFive.classList.remove('dot-selected');
+                break;
+        }
+        switch(pictureNumber){
+            case 1:
+                dotOne.classList.add('dot-selected');
+                break;
+            case 2:
+                dotTwo.classList.add('dot-selected');
+                break;
+            case 3:
+                dotThree.classList.add('dot-selected');
+                break;
+            case 4:
+                dotFour.classList.add('dot-selected');
+                break;
+            case 5:
+                dotFive.classList.add('dot-selected');
+                break;
+        }
+    }
     curPicture = pictureNumber;
 }
 
