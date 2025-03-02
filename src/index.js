@@ -39,7 +39,7 @@ function changePicture(pictureNumber){
 
 leftArrow.addEventListener('click', () =>{
     if(curPicture != 1){
-        let newPicture = curPicture++;
+        let newPicture = curPicture--;
         changePicture(newPicture);
     }
 });
