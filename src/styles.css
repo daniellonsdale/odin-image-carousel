@@ -45,8 +45,9 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   width: 100vw;
-  
+
   position: relative;
+  bottom: 10%;
 }
 
 .dot-container{
@@ -58,26 +59,6 @@ body {
   left: 26%;
   z-index: 10;
 }
-
-/* .dot-container-1{
-  right: 0;
-}
-
-.dot-container-2{
-  right: 20vw;
-}
-
-.dot-container-3{
-  right: 40vw;
-}
-
-.dot-container-4{
-  right: 60vw;
-}
-
-.dot-container-5{
-  right: 80vw;
-} */
 
 .dot{
   height: 1.5vw;
@@ -115,6 +96,10 @@ body {
   right: 80vw;
 }
 
-.picture-holder > *{
-  padding: 5%;
+/* .picture-holder > *{
+  padding: 2% 5% 20% 5%;
+} */
+
+.picture{
+  padding: 10%;
 }
