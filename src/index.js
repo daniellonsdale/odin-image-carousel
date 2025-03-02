@@ -9,3 +9,25 @@ const dotFour = document.querySelector('.dot-4');
 const dotFive = document.querySelector('.dot-5');
 const pictureHolder = document.querySelector('.picture-holder');
 let curPicture = 1;
+
+function changePicture(pictureNumber){
+    pictureHolder.removeAttribute('class');
+    pictureHolder.classList.add('picture-holder');
+    switch(pictureNumber){
+        case 1:
+            pictureHolder.classList.add('picture-holder-1');
+            break;
+        case 2:
+            pictureHolder.classList.add('picture-holder-2');
+            break;
+        case 3:
+            pictureHolder.classList.add('picture-holder-3');
+            break;
+        case 4:
+            pictureHolder.classList.add('picture-holder-4');
+            break;
+        case 5:
+            pictureHolder.classList.add('picture-holder-5');
+            break;
+    }
+}
